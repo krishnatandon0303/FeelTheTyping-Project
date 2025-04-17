@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyricType - Typing Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FeelTheTyping 🎵</h1>
+        
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle" class="dark-mode-toggle">🌓</button>
+        
+        <!-- Song Selection -->
+        <div class="song-selector">
+            <select id="songSelect" class="song-select">
+                <option value="">Select a Song</option>
+                <option value="queen/bohemian rhapsody">Bohemian Rhapsody - Queen</option>
+                <option value="beatles/yesterday">Yesterday - Beatles</option>
+                <option value="whitney houston/i will always love you">I Will Always Love You - Whitney Houston</option>
+            </select>
+            <button id="startBtn" class="btn">Start Practice</button>
+        </div>
+
+        <!-- Timer Display -->
+        <div id="timer" class="timer">60</div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <!-- Typing Area -->
+        <div id="typingArea" class="typing-area"></div>
+        <textarea id="inputField" class="input-field" placeholder="Start typing here..." disabled></textarea>
+
+        <!-- Stats Display -->
+        <div id="stats" class="stats">
+            <div>WPM: <span id="wpm">0</span></div>
+            <div>Accuracy: <span id="accuracy">0</span>%</div>
+            <div>Characters: <span id="charCount">0</span></div>
+        </div>
+
+        <!-- Leaderboard -->
+        <div id="leaderboard" class="leaderboard">
+            <h2>Leaderboard 🏆</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
